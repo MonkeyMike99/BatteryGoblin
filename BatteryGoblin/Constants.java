@@ -18,10 +18,10 @@ public class Constants
     public static final float BULLET_RADIUS = 7;
     public static final float BULLET_SPEED = 20;
     
-    public static final int TOP = 0; 
-    public static final int BOTTOM = 1; 
-    public static final int LEFT = 2; 
-    public static final int RIGHT = 3; 
+    public static final int TOP = 1; 
+    public static final int BOTTOM = 2; 
+    public static final int LEFT = 3; 
+    public static final int RIGHT = 4; 
     
       public static final float MAX_HEALTH = 100;
     
