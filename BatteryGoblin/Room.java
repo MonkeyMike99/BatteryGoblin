@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Room here.
  *
@@ -11,7 +10,6 @@ public class Room
     private boolean hasRightDoor;
     private boolean hasTopDoor;
     private boolean hasBotDoor;
-    private 
     
     public Room(boolean left,boolean right,boolean top,boolean bot){
         hasLeftDoor=left;
@@ -23,9 +21,20 @@ public class Room
         boolean[] out = new boolean[5];
         out[Constants.LEFT]=hasLeftDoor;
         out[Constants.RIGHT]=hasRightDoor;
-        out[Constnast.TOP] =hasTopDoor;
-        out[Constanst.BOTTOM]=hasBotDoor;
+        out[Constants.TOP] =hasTopDoor;
+        out[Constants.BOTTOM]=hasBotDoor;
         return out;
     }
-    
+    public void setLeftDoor(boolean set){
+        hasLeftDoor = set;
+    }
+    public void setRightDoor(boolean set){
+        hasRightDoor = set;
+    }
+    public void setTopDoor(boolean set){
+        hasTopDoor = set;
+    }
+    public void setBotDoor(boolean set){
+        hasBotDoor = set;
+    }
 }

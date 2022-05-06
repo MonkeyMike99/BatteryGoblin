@@ -7,5 +7,5 @@
  */
 public enum GameState
 {
-    MENU, GAME
+    MENU, GAME,SPAWN
 }

@@ -12,7 +12,7 @@ public class Constants
     //WORLD_WIDTH and WORLD_HEIGHT proportional to config.width and config.height in GameLauncher class
     public static final float WORLD_WIDTH = 800; 
     public static final float WORLD_HEIGHT = 480;
-    
+
     //other constants we will need
     public static final float BALL_SPEED = 7;
     public static final float BULLET_RADIUS = 7;
@@ -24,5 +24,4 @@ public class Constants
     public static final int RIGHT = 4; 
     
       public static final float MAX_HEALTH = 100;
-    
 }
