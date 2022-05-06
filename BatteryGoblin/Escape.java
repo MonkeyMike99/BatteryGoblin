@@ -29,6 +29,8 @@ public class Escape extends ApplicationAdapter//A Pong object ___________ Applic
     private int playerx;
     private int playery;
     private Room[][] grid;
+    private int roomR;
+    private int roomC;
     private EnemyFollow[] enemies; //Circle object to represent the ball (Circle is a class form libGDX)
     private ArrayList<Bullet> bullets;
     private Player player; 
@@ -49,7 +51,10 @@ public class Escape extends ApplicationAdapter//A Pong object ___________ Applic
         pew = Gdx.audio.newSound(Gdx.files.internal("Laser-pew-sound-effect.mp3"));
         enemies = new EnemyFollow[1000]; 
         bullets = new ArrayList();
-
+        grid = new Room[5][5];
+        roomR=2;
+        roomC=2;
+        grid[roomR][roomC] = new Room(true,true,true,true);
         float randomRadius = 10;
         Color playerColor = new Color(0, 1, 0, 1); 
         player = new Player(Constants.WORLD_WIDTH / 2 - randomRadius / 2, 
@@ -93,8 +98,9 @@ public class Escape extends ApplicationAdapter//A Pong object ___________ Applic
         if(gamestate == GameState.GAME)
         {
             timer++; 
+            checkRoom();
             moveBullets();
-            player.move(playerx,playery); 
+            player.move(playerx,playery);
             //check for collisions
             checkCollisions(); 
 
@@ -329,7 +335,3 @@ public class Escape extends ApplicationAdapter//A Pong object ___________ Applic
     }
 
 }
-
-
-}
-
