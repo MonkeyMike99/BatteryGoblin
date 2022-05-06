@@ -93,10 +93,6 @@ public class Escape extends ApplicationAdapter//A Pong object ___________ Applic
         if(gamestate == GameState.GAME)
         {
             timer++; 
-            //add Enemy objects to the array 
-            generateEnemies(); 
-            //move the Enemies
-            moveEnemies(); 
             moveBullets();
             player.move(playerx,playery); 
             //check for collisions
@@ -331,6 +327,9 @@ public class Escape extends ApplicationAdapter//A Pong object ___________ Applic
         renderer.dispose(); 
         batch.dispose(); 
     }
+
+}
+
 
 }
 
