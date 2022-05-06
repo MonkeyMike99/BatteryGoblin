@@ -19,8 +19,13 @@ public class Room
         hasTopDoor=top;
         hasBotDoor=bot;
     }
-    public Room[] getWalls(){
-           
+    public boolean[] getWalls(){
+        boolean[] out = new boolean[5];
+        out[Constants.LEFT]=hasLeftDoor;
+        out[Constants.RIGHT]=hasRightDoor;
+        out[Constnast.TOP] =hasTopDoor;
+        out[Constanst.BOTTOM]=hasBotDoor;
+        return out;
     }
     
 }
