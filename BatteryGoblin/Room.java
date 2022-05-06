@@ -19,6 +19,8 @@ public class Room
         hasTopDoor=top;
         hasBotDoor=bot;
     }
-    
+    public Room[] getWalls(){
+           
+    }
     
 }
